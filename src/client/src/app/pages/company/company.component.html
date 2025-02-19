@@ -1,0 +1,23 @@
+<h2>Lista de Restaurantes</h2>
+<ul>
+  <li *ngFor="let company of companies" style="list-style: none;">
+      <div class="card-body" (click)="redirectRouter(company.id)">
+        <div class="card-img">
+        </div>
+        <div class="card-data">
+          <div class="card-company-identity">
+            <span>{{company.nome}}</span>
+          </div>
+          <div class="card-company-infos">
+            <span style="color: goldenrod;">{{'5.0'}} ☆ </span>-<span>{{company.categoria}}</span>
+          </div>
+          <div class="card-company-address">
+            <span>Entrega: {{company.prazoEntrega}} min</span>
+            <span>Retirada: {{company.prazoRetirada}} min</span>
+          </div>
+        </div>
+      </div>
+
+  </li>
+</ul>
+

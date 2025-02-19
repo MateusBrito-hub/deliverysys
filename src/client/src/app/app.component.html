@@ -1,0 +1,24 @@
+<mat-sidenav-container class="sidenav-container">
+<mat-sidenav #sidenav mode="push" [opened]="false">
+  <div class="menu">
+    <h3>Menu</h3>
+    <button mat-button (click)="redirectRouter('companies')">🏠 Home</button>
+    <button mat-button routerLink="/perfil">👤 Perfil</button>
+    <button mat-button routerLink="/config">⚙ Configurações</button>
+    <button mat-button (click)="sidenav.close()">❌ Fechar</button>
+  </div>
+</mat-sidenav>
+
+<mat-sidenav-content>
+  <mat-toolbar color="primary" style="position: fixed;">
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Meu Sistema</span>
+  </mat-toolbar>
+
+  <div class="content" style="padding-top: 50px;">
+    <router-outlet></router-outlet>
+  </div>
+</mat-sidenav-content>
+</mat-sidenav-container>
