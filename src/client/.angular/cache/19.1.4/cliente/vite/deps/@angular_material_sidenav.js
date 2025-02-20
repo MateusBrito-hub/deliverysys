@@ -6,6 +6,12 @@ import {
   trigger
 } from "./chunk-NHDEE4OC.js";
 import {
+  CdkScrollable,
+  CdkScrollableModule,
+  ScrollDispatcher,
+  ViewportRuler
+} from "./chunk-YHWG3VSE.js";
+import {
   ESCAPE,
   FocusMonitor,
   FocusTrapFactory,
@@ -13,12 +19,6 @@ import {
   MatCommonModule,
   hasModifierKey
 } from "./chunk-YZ5RVWKH.js";
-import {
-  CdkScrollable,
-  CdkScrollableModule,
-  ScrollDispatcher,
-  ViewportRuler
-} from "./chunk-YHWG3VSE.js";
 import {
   Platform,
   coerceBooleanProperty,

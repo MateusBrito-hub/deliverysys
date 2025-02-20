@@ -12,6 +12,7 @@ export const create = async (companyProfile: Omit<ICompanyProfile, 'id'>): Promi
 		}
 		return new Error('Error saving record');
 	} catch (err) {
+		console.error(err)
 		return new Error('Error saving record');
 	}
 };

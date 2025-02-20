@@ -7,4 +7,5 @@ export interface ICompanyProfile{
 	horarioAbertura: number;
 	horarioFechamento: number;
 	informacoes: string;
+	categoria: string;
 }

@@ -15,7 +15,8 @@ export const createValidation = validation((getSchema) => ({
 		prazoRetirada: yup.number().required(),
 		horarioAbertura: yup.number().required(),
 		horarioFechamento: yup.number().required(),
-		informacoes: yup.string().required()
+		informacoes: yup.string().required(),
+		categoria: yup.string().required()
 	}))
 }));
 

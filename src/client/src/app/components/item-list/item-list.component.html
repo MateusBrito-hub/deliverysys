@@ -1,0 +1,16 @@
+<div class="list-body">
+  <div class="categories">
+    <div class="category" *ngFor="let category of categories" (click)="selectItem(category.name)">
+      {{category.name}}
+    </div>
+
+  </div>
+  <div class="product-card" *ngFor="let item of itens">
+    <div class="infos">
+      <h3>{{item.name}}</h3>
+      <p>{{item.detail}}</p>
+      <span>R$ {{item.price}}</span>
+    </div>
+    <div class="img"><img src="" alt="product picture"></div>
+  </div>
+</div>
