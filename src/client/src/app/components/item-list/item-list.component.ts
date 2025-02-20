@@ -9,10 +9,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './item-list.component.css'
 })
 export class ItemListComponent {
-  datas : any[] = [{name:'teste1', category:'teste1', price:117.50, detail: 'item test'},{name:'teste2', category:'teste1', price:117.50, detail: 'item test'}]
+  datas : any[] = [{name:'teste4', category:'teste1', price:117.50, detail: 'item test'},{name:'teste3', category:'teste1', price:117.50, detail: 'item test'},{name:'teste1', category:'teste1', price:117.50, detail: 'item test'},{name:'teste2', category:'teste1', price:117.50, detail: 'item test'},{name:'teste5', category:'teste1', price:117.50, detail: 'item test'}]
   categories : any[] = [{name:'teste1'},{name:'teste2'},{name:'teste3'},{name:'teste4'}]
   itens : any[]  = []
-  selectedCategory: string = this.datas[0].name;
+  selectedCategory: string = this.datas[0].category;
 
   ngOnInit(): void {
     for (let item of this.datas) {

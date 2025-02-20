@@ -6,7 +6,6 @@
 .list-body {
   margin: auto;
   width: 95%;
-  height: 575px;
 }
 
 .categories {
@@ -25,10 +24,17 @@
   font-weight: 500;
 }
 
+.product-list{
+  padding-left: -15px;
+  height: 765px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 .product-card{
   border:solid 1px red;
   display: flex;
-  width: 100%;
+  width: 95%;
   height: 150px;
   padding: 5px;
   margin-top: 5px;

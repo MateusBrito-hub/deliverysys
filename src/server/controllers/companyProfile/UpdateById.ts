@@ -18,7 +18,8 @@ export const updateByIdValidation = validation((getSchema) => ({
 		prazoRetirada: yup.number().required(),
 		horarioAbertura: yup.number().required(),
 		horarioFechamento: yup.number().required(),
-		informacoes: yup.string().required()
+		informacoes: yup.string().required(),
+		categoria: yup.string().required(),
 	})),
     params: getSchema<IParamsProps>(yup.object().shape({
         id: yup.number().integer().required().moreThan(0)
