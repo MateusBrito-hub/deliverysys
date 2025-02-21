@@ -19,14 +19,18 @@
 }
 
 .category {
+  align-content: center;
+  height: 40px;
   padding-right: 50px;
   font-size: 25px;
   font-weight: 500;
 }
 
 .product-list{
+  position: sticky;
+  top: 0;
   padding-left: -15px;
-  height: 765px;
+  height: 790px;
   overflow-y: auto;
   overflow-x: hidden;
 }
