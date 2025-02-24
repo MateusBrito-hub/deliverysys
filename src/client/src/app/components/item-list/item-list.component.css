@@ -36,7 +36,6 @@
 }
 
 .product-card{
-  border:solid 1px red;
   display: flex;
   width: 95%;
   height: 150px;
